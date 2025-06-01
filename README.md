@@ -7,7 +7,7 @@ This project is developed as part of the [Object-Oriented Design, IV1350](https:
 See [REQUIREMENTS.md](REQUIREMENTS.md) for detailed functional requirements and business rules.
 
 ## Sample Output
-See [SAMPLE_OUTPUT.md](SAMPLE_OUTPUT)for a sample program run.
+See [SAMPLE_OUTPUT.md](SAMPLE_OUTPUT.md)for a sample program run.
 
 ## Logs
 - [error.log](error.log): Example error log from a sample run.
