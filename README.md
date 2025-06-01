@@ -5,3 +5,10 @@ This project is developed as part of the [Object-Oriented Design, IV1350](https:
 ## Requirements
 
 See [REQUIREMENTS.md](REQUIREMENTS.md) for detailed functional requirements and business rules.
+
+## Sample Output
+See [SAMPLE_OUTPUT.md](SAMPLE_OUTPUT)for a sample program run.
+
+## Logs
+- [error.log](http://_vscodecontentref_/7): Example error log from a sample run.
+- [revenue.log](http://_vscodecontentref_/8): Example revenue log from a sample run.
