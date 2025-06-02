@@ -101,6 +101,7 @@ public class InventoryRegistry {
         private final String description;
         private final double price;
         private final double vatRate;
+        @SuppressWarnings("unused")
         private int quantity;
 
         private ItemData(String itemID, String name, String description, double price,
