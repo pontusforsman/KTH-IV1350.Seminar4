@@ -78,8 +78,7 @@ public class View {
             double PAYMENT_AMOUNT3 = 500;
             displayChange(PAYMENT_AMOUNT3);
         }
-
-        // Additional: Try invalid and fail item IDs to show error handling
+        // Faulty operation
         displayStartSale();
         displayEnterItem("invalid");
         displayEnterItem("dbfail");
@@ -88,7 +87,6 @@ public class View {
             displayChange(PAYMENT_AMOUNT4);
         }
 
-        // Do not start a new sale after a cancelled sale
         System.out.println("=========================================");
     }
 
