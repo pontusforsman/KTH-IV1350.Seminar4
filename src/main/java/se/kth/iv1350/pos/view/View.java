@@ -7,6 +7,7 @@ import se.kth.iv1350.pos.controller.OperationFailedException;
 import se.kth.iv1350.pos.integration.ItemNotFoundException;
 import se.kth.iv1350.pos.model.Amount;
 import se.kth.iv1350.pos.model.SaleItemDTO;
+import se.kth.iv1350.pos.util.FileLogger;
 
 /**
  * Simulated user interface for the POS system. This class is intended for demonstration and testing
@@ -247,12 +248,16 @@ public class View {
      */
     private void handleException(StringBuilder builder, Exception e) {
         if (e instanceof OperationFailedException) {
+            FileLogger.log("Operation failed: ", e);
             appendLine(builder, "A system error occurred. Please try again later.");
         } else if (e instanceof ItemNotFoundException) {
+            FileLogger.log("Item not found: ", e);
             appendLine(builder, "Could not find the entered item identifier.");
         } else if (e instanceof IllegalStateException) {
+            FileLogger.log("Illegal State: ", e);
             appendLine(builder, "Invalid state, please try again.");
         } else {
+            FileLogger.log("Unexpected exception: ", e);
             appendLine(builder, "An unexpected error occurred.");
         }
         endSection(builder);

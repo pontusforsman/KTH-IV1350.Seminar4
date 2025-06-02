@@ -1,64 +1,120 @@
-[2025-06-02 14:34:44] ERROR: Item not found: fail
+[2025-06-02 14:58:37] ERROR: Item not found: fail
 se.kth.iv1350.pos.integration.ItemNotFoundException: fail
 	at se.kth.iv1350.pos.integration.InventoryRegistry.findItemById(InventoryRegistry.java:52)
 	at se.kth.iv1350.pos.controller.Controller.enterItem(Controller.java:87)
-	at se.kth.iv1350.pos.view.View.displayEnterItem(View.java:135)
-	at se.kth.iv1350.pos.view.View.sampleExecution(View.java:72)
+	at se.kth.iv1350.pos.view.View.displayEnterItem(View.java:131)
+	at se.kth.iv1350.pos.view.View.sampleExecution(View.java:73)
 	at se.kth.iv1350.pos.startup.Main.main(Main.java:30)
 
-[2025-06-02 14:34:44] ERROR: Inventory database error for item: dbfail
-se.kth.iv1350.pos.integration.DabaseFailureException: Database failure when searching for item ID 'dbfail'.
-	at se.kth.iv1350.pos.integration.InventoryRegistry.findItemById(InventoryRegistry.java:48)
-	at se.kth.iv1350.pos.controller.Controller.enterItem(Controller.java:87)
-	at se.kth.iv1350.pos.view.View.displayEnterItem(View.java:135)
-	at se.kth.iv1350.pos.view.View.sampleExecution(View.java:84)
-	at se.kth.iv1350.pos.startup.Main.main(Main.java:30)
-
-[2025-06-02 14:36:42] ERROR: Item not found: fail
-se.kth.iv1350.pos.integration.ItemNotFoundException: fail
-	at se.kth.iv1350.pos.integration.InventoryRegistry.findItemById(InventoryRegistry.java:52)
-	at se.kth.iv1350.pos.controller.Controller.enterItem(Controller.java:87)
-	at se.kth.iv1350.pos.view.View.displayEnterItem(View.java:133)
-	at se.kth.iv1350.pos.view.View.sampleExecution(View.java:72)
-	at se.kth.iv1350.pos.startup.Main.main(Main.java:30)
-
-[2025-06-02 14:36:42] ERROR: Item not found: invalid
+[2025-06-02 14:58:37] ERROR: Item not found: invalid
 se.kth.iv1350.pos.integration.ItemNotFoundException: invalid
 	at se.kth.iv1350.pos.integration.InventoryRegistry.findItemById(InventoryRegistry.java:52)
 	at se.kth.iv1350.pos.controller.Controller.enterItem(Controller.java:87)
-	at se.kth.iv1350.pos.view.View.displayEnterItem(View.java:133)
+	at se.kth.iv1350.pos.view.View.displayEnterItem(View.java:131)
 	at se.kth.iv1350.pos.view.View.sampleExecution(View.java:83)
 	at se.kth.iv1350.pos.startup.Main.main(Main.java:30)
 
-[2025-06-02 14:36:42] ERROR: Inventory database error for item: dbfail
+[2025-06-02 14:58:37] ERROR: Inventory database error for item: dbfail
 se.kth.iv1350.pos.integration.DabaseFailureException: Database failure when searching for item ID 'dbfail'.
 	at se.kth.iv1350.pos.integration.InventoryRegistry.findItemById(InventoryRegistry.java:48)
 	at se.kth.iv1350.pos.controller.Controller.enterItem(Controller.java:87)
-	at se.kth.iv1350.pos.view.View.displayEnterItem(View.java:133)
+	at se.kth.iv1350.pos.view.View.displayEnterItem(View.java:131)
 	at se.kth.iv1350.pos.view.View.sampleExecution(View.java:84)
 	at se.kth.iv1350.pos.startup.Main.main(Main.java:30)
 
-[2025-06-02 14:37:03] ERROR: Item not found: fail
+[2025-06-02 15:09:31] ERROR: Item not found: fail
 se.kth.iv1350.pos.integration.ItemNotFoundException: fail
 	at se.kth.iv1350.pos.integration.InventoryRegistry.findItemById(InventoryRegistry.java:52)
 	at se.kth.iv1350.pos.controller.Controller.enterItem(Controller.java:87)
-	at se.kth.iv1350.pos.view.View.displayEnterItem(View.java:132)
-	at se.kth.iv1350.pos.view.View.sampleExecution(View.java:72)
+	at se.kth.iv1350.pos.view.View.displayEnterItem(View.java:131)
+	at se.kth.iv1350.pos.view.View.sampleExecution(View.java:73)
 	at se.kth.iv1350.pos.startup.Main.main(Main.java:30)
 
-[2025-06-02 14:37:03] ERROR: Item not found: invalid
+[2025-06-02 15:09:31] ERROR: Item not found: invalid
 se.kth.iv1350.pos.integration.ItemNotFoundException: invalid
 	at se.kth.iv1350.pos.integration.InventoryRegistry.findItemById(InventoryRegistry.java:52)
 	at se.kth.iv1350.pos.controller.Controller.enterItem(Controller.java:87)
-	at se.kth.iv1350.pos.view.View.displayEnterItem(View.java:132)
+	at se.kth.iv1350.pos.view.View.displayEnterItem(View.java:131)
 	at se.kth.iv1350.pos.view.View.sampleExecution(View.java:83)
 	at se.kth.iv1350.pos.startup.Main.main(Main.java:30)
 
-[2025-06-02 14:37:03] ERROR: Inventory database error for item: dbfail
+[2025-06-02 15:09:31] ERROR: Inventory database error for item: dbfail
 se.kth.iv1350.pos.integration.DabaseFailureException: Database failure when searching for item ID 'dbfail'.
 	at se.kth.iv1350.pos.integration.InventoryRegistry.findItemById(InventoryRegistry.java:48)
 	at se.kth.iv1350.pos.controller.Controller.enterItem(Controller.java:87)
-	at se.kth.iv1350.pos.view.View.displayEnterItem(View.java:132)
+	at se.kth.iv1350.pos.view.View.displayEnterItem(View.java:131)
+	at se.kth.iv1350.pos.view.View.sampleExecution(View.java:84)
+	at se.kth.iv1350.pos.startup.Main.main(Main.java:30)
+
+[2025-06-02 15:15:42] ERROR: Item not found: fail
+se.kth.iv1350.pos.integration.ItemNotFoundException: fail
+	at se.kth.iv1350.pos.integration.InventoryRegistry.findItemById(InventoryRegistry.java:52)
+	at se.kth.iv1350.pos.controller.Controller.enterItem(Controller.java:87)
+	at se.kth.iv1350.pos.view.View.displayEnterItem(View.java:131)
+	at se.kth.iv1350.pos.view.View.sampleExecution(View.java:73)
+	at se.kth.iv1350.pos.startup.Main.main(Main.java:30)
+
+[2025-06-02 15:15:42] ERROR: Item not found: invalid
+se.kth.iv1350.pos.integration.ItemNotFoundException: invalid
+	at se.kth.iv1350.pos.integration.InventoryRegistry.findItemById(InventoryRegistry.java:52)
+	at se.kth.iv1350.pos.controller.Controller.enterItem(Controller.java:87)
+	at se.kth.iv1350.pos.view.View.displayEnterItem(View.java:131)
+	at se.kth.iv1350.pos.view.View.sampleExecution(View.java:83)
+	at se.kth.iv1350.pos.startup.Main.main(Main.java:30)
+
+[2025-06-02 15:15:42] ERROR: Inventory database error for item: dbfail
+se.kth.iv1350.pos.integration.DabaseFailureException: Database failure when searching for item ID 'dbfail'.
+	at se.kth.iv1350.pos.integration.InventoryRegistry.findItemById(InventoryRegistry.java:48)
+	at se.kth.iv1350.pos.controller.Controller.enterItem(Controller.java:87)
+	at se.kth.iv1350.pos.view.View.displayEnterItem(View.java:131)
+	at se.kth.iv1350.pos.view.View.sampleExecution(View.java:84)
+	at se.kth.iv1350.pos.startup.Main.main(Main.java:30)
+
+[2025-06-02 15:18:51] ERROR: Item not found: fail
+se.kth.iv1350.pos.integration.ItemNotFoundException: fail
+	at se.kth.iv1350.pos.integration.InventoryRegistry.findItemById(InventoryRegistry.java:52)
+	at se.kth.iv1350.pos.controller.Controller.enterItem(Controller.java:87)
+	at se.kth.iv1350.pos.view.View.displayEnterItem(View.java:131)
+	at se.kth.iv1350.pos.view.View.sampleExecution(View.java:73)
+	at se.kth.iv1350.pos.startup.Main.main(Main.java:30)
+
+[2025-06-02 15:18:51] ERROR: Item not found: invalid
+se.kth.iv1350.pos.integration.ItemNotFoundException: invalid
+	at se.kth.iv1350.pos.integration.InventoryRegistry.findItemById(InventoryRegistry.java:52)
+	at se.kth.iv1350.pos.controller.Controller.enterItem(Controller.java:87)
+	at se.kth.iv1350.pos.view.View.displayEnterItem(View.java:131)
+	at se.kth.iv1350.pos.view.View.sampleExecution(View.java:83)
+	at se.kth.iv1350.pos.startup.Main.main(Main.java:30)
+
+[2025-06-02 15:18:51] ERROR: Inventory database error for item: dbfail
+se.kth.iv1350.pos.integration.DabaseFailureException: Database failure when searching for item ID 'dbfail'.
+	at se.kth.iv1350.pos.integration.InventoryRegistry.findItemById(InventoryRegistry.java:48)
+	at se.kth.iv1350.pos.controller.Controller.enterItem(Controller.java:87)
+	at se.kth.iv1350.pos.view.View.displayEnterItem(View.java:131)
+	at se.kth.iv1350.pos.view.View.sampleExecution(View.java:84)
+	at se.kth.iv1350.pos.startup.Main.main(Main.java:30)
+
+[2025-06-02 15:21:49] ERROR: Item not found: fail
+se.kth.iv1350.pos.integration.ItemNotFoundException: fail
+	at se.kth.iv1350.pos.integration.InventoryRegistry.findItemById(InventoryRegistry.java:52)
+	at se.kth.iv1350.pos.controller.Controller.enterItem(Controller.java:87)
+	at se.kth.iv1350.pos.view.View.displayEnterItem(View.java:131)
+	at se.kth.iv1350.pos.view.View.sampleExecution(View.java:73)
+	at se.kth.iv1350.pos.startup.Main.main(Main.java:30)
+
+[2025-06-02 15:21:49] ERROR: Item not found: invalid
+se.kth.iv1350.pos.integration.ItemNotFoundException: invalid
+	at se.kth.iv1350.pos.integration.InventoryRegistry.findItemById(InventoryRegistry.java:52)
+	at se.kth.iv1350.pos.controller.Controller.enterItem(Controller.java:87)
+	at se.kth.iv1350.pos.view.View.displayEnterItem(View.java:131)
+	at se.kth.iv1350.pos.view.View.sampleExecution(View.java:83)
+	at se.kth.iv1350.pos.startup.Main.main(Main.java:30)
+
+[2025-06-02 15:21:49] ERROR: Inventory database error for item: dbfail
+se.kth.iv1350.pos.integration.DabaseFailureException: Database failure when searching for item ID 'dbfail'.
+	at se.kth.iv1350.pos.integration.InventoryRegistry.findItemById(InventoryRegistry.java:48)
+	at se.kth.iv1350.pos.controller.Controller.enterItem(Controller.java:87)
+	at se.kth.iv1350.pos.view.View.displayEnterItem(View.java:131)
 	at se.kth.iv1350.pos.view.View.sampleExecution(View.java:84)
 	at se.kth.iv1350.pos.startup.Main.main(Main.java:30)
 

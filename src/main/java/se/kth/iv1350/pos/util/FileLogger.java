@@ -31,4 +31,9 @@ public class FileLogger {
             System.err.println("Failed to write to log file: " + io.getMessage());
         }
     }
+
+    public static void log(Exception e) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'log'");
+    }
 }
