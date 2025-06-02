@@ -1,5 +1,7 @@
 package se.kth.iv1350.pos.view;
 
+import java.io.PrintStream;
+
 import se.kth.iv1350.pos.controller.Controller;
 import se.kth.iv1350.pos.controller.OperationFailedException;
 import se.kth.iv1350.pos.integration.ItemNotFoundException;
@@ -16,13 +18,12 @@ import se.kth.iv1350.pos.model.SaleItemDTO;
 public class View {
     private static final String ENTER_ITEM = "Add 1 item with item id ";
     private static final String ENTER_QUANTITY = "Set quantity of last item added to %d";
-    private static final String NOT_FOUND = "Item not found";
     private static final String END_SALE = "End sale:";
     private static final String PAYMENT = "Amount paid: %s SEK";
     private static final String CHANGE = "Change: %s";
 
     private final Controller controller;
-    private final java.io.PrintStream out;
+    private final PrintStream out;
 
     /**
      * Creates a View with a custom output stream (for testability).
@@ -30,7 +31,7 @@ public class View {
      * @param controller The controller to use.
      * @param out The output stream to print to (default is System.out).
      */
-    public View(Controller controller, java.io.PrintStream out) {
+    public View(Controller controller, PrintStream out) {
         this.controller = controller;
         this.out = out != null ? out : System.out;
     }
@@ -125,12 +126,9 @@ public class View {
     private void displayEnterItem(String itemID) {
         StringBuilder builder = new StringBuilder();
         appendLine(builder, ENTER_ITEM + itemID + " :");
-        if (!isValidItemID(itemID)) {
-            appendLine(builder, "Invalid item ID. Please try again.");
-            endSection(builder);
-            print(builder);
-            return;
-        }
+        endSection(builder);
+        print(builder);
+
         try {
             var item = controller.enterItem(itemID);
             displayItemDetails(builder, item);
@@ -253,28 +251,13 @@ public class View {
         if (e instanceof OperationFailedException) {
             appendLine(builder, "A system error occurred. Please try again later.");
         } else if (e instanceof ItemNotFoundException) {
-            appendLine(builder, NOT_FOUND);
+            appendLine(builder, "Could not find the entered item identifier.");
         } else if (e instanceof IllegalStateException) {
-            appendLine(builder, "No sale in progress. Please start a new sale.");
+            appendLine(builder, "Invalid state, please  try again.");
         } else {
             appendLine(builder, "An unexpected error occurred.");
         }
         endSection(builder);
-    }
-
-    /**
-     * Validates the item ID using OOD principles. Accepts only numeric IDs or known test cases
-     * ("fail", "dbfail").
-     *
-     * @param itemID The item ID to validate.
-     * @return true if valid, false otherwise.
-     */
-    private boolean isValidItemID(String itemID) {
-        if (itemID == null || itemID.isBlank())
-            return false;
-        if (itemID.equals("fail") || itemID.equals("dbfail"))
-            return true;
-        return itemID.matches("\\d+");
     }
 
     /**
