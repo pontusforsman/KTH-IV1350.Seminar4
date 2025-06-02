@@ -253,7 +253,7 @@ public class View {
         } else if (e instanceof ItemNotFoundException) {
             appendLine(builder, "Could not find the entered item identifier.");
         } else if (e instanceof IllegalStateException) {
-            appendLine(builder, "Invalid state, please  try again.");
+            appendLine(builder, "Invalid state, please try again.");
         } else {
             appendLine(builder, "An unexpected error occurred.");
         }
