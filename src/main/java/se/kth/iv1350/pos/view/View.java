@@ -126,7 +126,7 @@ public class View {
         StringBuilder builder = new StringBuilder();
         appendLine(builder, ENTER_ITEM + itemID + " :");
         if (!isValidItemID(itemID)) {
-            appendLine(builder, "Invalid item ID. Please enter a numeric ID or 'fail'/'dbfail'.");
+            appendLine(builder, "Invalid item ID. Please try again.");
             endSection(builder);
             print(builder);
             return;
